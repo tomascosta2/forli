@@ -29,7 +29,7 @@ define( 'DB_USER', 'u605342069_forli_u' );
 define( 'DB_PASSWORD', 'FOpassword!25' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'database' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
