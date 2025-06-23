@@ -1,0 +1,87 @@
+<?php
+
+$hero_fields = get_field('hero');
+$servicios_fields = get_field('servicios');
+$banner_fields = get_field('banner');
+$modalidad_fields = get_field('modalidad');
+
+get_header(); ?>
+
+<section class="py-[80px] bg-gray-300 bg-[url(<?php echo $hero_fields['fondo']['url'] ?>)]">
+	<div class="max-w-[1200px] mx-auto px-4">
+		<h1 class="text-white font-bold text-[48px] max-w-[660px] leading-[110%]"><?php echo $hero_fields['titulo']; ?></h1>
+		<p class="mt-8 font-light text-white"><?php echo $hero_fields['bajada']; ?></p>
+		<a class="block mt-12 w-fit bg-[#918473] text-white font-bold px-10 py-4 rounded-full" href="<?php echo $hero_fields['boton']['url']; ?>">
+			<?php echo $hero_fields['boton']['title']; ?>
+		</a>
+	</div>
+</section>
+
+<section class="py-[80px]">
+	<div class="max-w-[1200px] mx-auto px-4">
+		<h2 class="text-center text-[36px] mb-8">Servicios</h2>
+		<div class="grid md:grid-cols-2 gap-4">
+			<div class="bg-white shadow-[2px_2px_30px_#00000020] h-fit">
+				<div class="p-[50px]">
+					<span class="text-[20px]">SERVICIO</span>
+					<h3 class="text-[28px] font-bold text-[#918473]"><?php echo $servicios_fields['titulo_servicio_1']; ?></h3>
+					<p class="mt-8 mb-6 text-[18px]">
+						<?php echo strip_tags($servicios_fields['descripcion_servicio_1'], 'strong') ?>
+					</p>
+				</div>
+				<img class="h-[414px] bg-gray-300" src="<?php echo $servicios_fields['imagen_servicio_1']['url'] ?>" alt="">
+			</div>
+			<div class="bg-white shadow-[2px_2px_30px_#00000020]">
+				<div class="p-[50px]">
+					<span class="text-[20px]">SERVICIO</span>
+					<h3 class="text-[28px] font-bold text-[#918473]"><?php echo $servicios_fields['titulo_servicio_2']; ?></h3>
+					<p class="mt-8 mb-6 text-[18px]">
+						<?php echo strip_tags($servicios_fields['descripcion_servicio_2'], 'strong') ?>
+					</p>
+				</div>
+				<img class="h-[414px] bg-gray-300" src="<?php echo $servicios_fields['imagen_servicio_2']['url'] ?>" alt="">
+			</div>
+		</div>
+		<a class="block mx-auto mt-12 w-fit bg-[#918473] text-white font-bold px-10 py-4 rounded-full" href="<?php echo $servicios_fields['boton']['url']; ?>">
+			<?php echo $servicios_fields['boton']['title']; ?>
+		</a>
+	</div>
+</section>
+
+<section>
+	<img class="h-[450px] bg-gray-400 object-cover object-center" src="<?php echo $banner_fields['imagen_banner']['url'] ?>" alt="<?php echo $banner_fields['imagen_banner']['alt'] ?>">
+</section>
+
+<section class="py-[80px]">
+	<div class="max-w-[1045px] mx-auto px-4">
+		<h2 class="text-center text-[36px] mb-8"><?php echo $modalidad_fields['titulo'] ?></h2>
+		<img class="bg-gray-300 max-w-full mb-10 w-[300px] md:w-[540px] mx-auto h-auto" src="" alt="¿Cómo trabajamos?">
+		<div class="grid md:grid-cols-2 gap-4 px-4">
+			<div class="bg-white shadow-[2px_2px_30px_#00000020]">
+				<div class="p-[50px]">
+					<img class="size-[54px] mx-auto" src="<?php echo $modalidad_fields['icono_1']['url'] ?>" alt="<?php echo $modalidad_fields['icono_1']['alt'] ?>">
+					<h3 class="text-[20px] mt-[24px] text-center font-bold text-[#918473] uppercase"><?php echo $modalidad_fields['titulo_1']; ?></h3>
+					<p class="mt-8 text-[18px] text-center max-w-[320px] mx-auto">
+						<?php echo strip_tags($modalidad_fields['descripcion_1'], 'strong') ?>
+					</p>
+				</div>
+				<img class="h-[414px] bg-gray-300" src="<?php echo $modalidad_fields['imagen_1']['url'] ?>" alt="">
+			</div>
+			<div class="bg-white shadow-[2px_2px_30px_#00000020]">
+				<div class="p-[50px]">
+					<img class="size-[54px] mx-auto" src="<?php echo $modalidad_fields['icono_2']['url'] ?>" alt="<?php echo $modalidad_fields['icono_2']['alt'] ?>">
+					<h3 class="text-[20px] mt-[24px] text-center font-bold text-[#918473] uppercase"><?php echo $modalidad_fields['titulo_2']; ?></h3>
+					<p class="mt-8 text-[18px] text-center max-w-[320px] mx-auto">
+						<?php echo strip_tags($modalidad_fields['descripcion_2'], 'strong') ?>
+					</p>
+				</div>
+				<img class="h-[414px] bg-gray-300" src="<?php echo $modalidad_fields['imagen_2']['url'] ?>" alt="">
+			</div>
+		</div>
+		<a class="block mx-auto mt-12 w-fit bg-[#918473] text-white font-bold px-10 py-4 rounded-full" href="<?php echo $modalidad_fields['boton']['url']; ?>">
+			<?php echo $modalidad_fields['boton']['title']; ?>
+		</a>
+	</div>
+</section>
+
+<?php get_footer(); ?>

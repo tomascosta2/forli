@@ -1,0 +1,21 @@
+name: forli
+recipe: wordpress
+proxy:
+  appserver:
+    - forli.local
+config:
+  php: '8.0'
+  via: apache
+  webroot: .
+  xdebug: true
+services:
+  database:
+    portforward: true
+    type: mysql
+    creds:
+      user: forlidb
+      password: forlidb
+      database: forlidb
+  pma:
+    type: phpmyadmin
+    hosts: database
