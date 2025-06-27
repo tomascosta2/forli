@@ -140,7 +140,7 @@ get_header(); ?>
 			<h2 class="text-[32px] my-4 leading-[120%]"><?php echo $contacto_fields['titulo'] ?></h2>
 			<p class="text-[20px] max-w-full w-[360px] font-medium leading-[120%]"><?php echo $contacto_fields['bajada'] ?></p>
 		</div>
-		<div class="bg-red-500 bg-[url('<?php echo $contacto_fields['imagen_de_fondo']['url'] ?>')] col-span-3">
+		<div class="bg-red-500 col-span-3 bg-[url('<?php echo $contacto_fields['imagen_de_fondo']['url']; ?>')]">
 
 		</div>
 	</div>
