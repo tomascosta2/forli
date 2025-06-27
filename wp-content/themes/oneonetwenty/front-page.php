@@ -6,6 +6,8 @@ $banner_fields = get_field('banner');
 $modalidad_fields = get_field('modalidad');
 $nosotros_fields = get_field('nosotros');
 $banner2_fields = get_field('banner_2');
+$clientes_fields = get_field('clientes');
+$contacto_fields = get_field('contacto');
 
 get_header(); ?>
 
@@ -107,6 +109,39 @@ get_header(); ?>
 			<div class="banner2-list col-span-5 flex items-center text-white text-[20px] font-semibold">
 				<?php echo $banner2_fields['lista'] ?>
 			</div>
+		</div>
+	</div>
+</section>
+
+<section class="py-[100px]">
+	<div class="max-w-[1260px] mx-auto px-4">
+		<div class="grid grid-cols-2 gap-12">
+			<div class="max-w-[540px]">
+				<img class="w-[500px] max-w-full mx-auto" src="<?php // echo $clientes_fields['bajada']['url'] ?>" alt="<?php // echo $clientes_fields['bajada']['alt'] ?>">
+				<div class="flex gap-8 flex-wrap justify-center">
+					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_1']['url']; ?>" alt="<?php echo $clientes_fields['cliente_1']['alt']; ?>">
+					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_2']['url']; ?>" alt="<?php echo $clientes_fields['cliente_2']['alt']; ?>">
+					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_3']['url']; ?>" alt="<?php echo $clientes_fields['cliente_3']['alt']; ?>">
+					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_4']['url']; ?>" alt="<?php echo $clientes_fields['cliente_4']['alt']; ?>">
+					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_5']['url']; ?>" alt="<?php echo $clientes_fields['cliente_5']['alt']; ?>">
+					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_6']['url']; ?>" alt="<?php echo $clientes_fields['cliente_6']['alt']; ?>">
+					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_7']['url']; ?>" alt="<?php echo $clientes_fields['cliente_7']['alt']; ?>">
+				</div>
+			</div>
+			<img src="<?php echo $clientes_fields['cliente_destacado']['url']; ?>" alt="<?php echo $clientes_fields['cliente_destacado']['alt']; ?>">
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="grid grid-cols-5">
+		<div class="bg-white py-[150px] px-[80px] col-span-2">
+			<p class="uppercase text-[18px] font-bold text-[#4F5D29]"><?php echo $contacto_fields['arriba_del_titulo'] ?></p>
+			<h2 class="text-[32px] my-4 leading-[120%]"><?php echo $contacto_fields['titulo'] ?></h2>
+			<p class="text-[20px] max-w-full w-[360px] font-medium leading-[120%]"><?php echo $contacto_fields['bajada'] ?></p>
+		</div>
+		<div class="bg-red-500 bg-[url('<?php echo $contacto_fields['imagen_de_fondo']['url'] ?>')] col-span-3">
+
 		</div>
 	</div>
 </section>
