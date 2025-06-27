@@ -4,11 +4,13 @@ $hero_fields = get_field('hero');
 $servicios_fields = get_field('servicios');
 $banner_fields = get_field('banner');
 $modalidad_fields = get_field('modalidad');
+$nosotros_fields = get_field('nosotros');
+$banner2_fields = get_field('banner_2');
 
 get_header(); ?>
 
 <section class="py-[80px] bg-gray-300 bg-[url(<?php echo $hero_fields['fondo']['url'] ?>)]">
-	<div class="max-w-[1200px] mx-auto px-4">
+	<div class="max-w-[1260px] mx-auto px-4">
 		<h1 class="text-white font-bold text-[48px] max-w-[660px] leading-[110%]"><?php echo $hero_fields['titulo']; ?></h1>
 		<p class="mt-8 font-light text-white"><?php echo $hero_fields['bajada']; ?></p>
 		<a class="block mt-12 w-fit bg-[#918473] text-white font-bold px-10 py-4 rounded-full" href="<?php echo $hero_fields['boton']['url']; ?>">
@@ -18,7 +20,7 @@ get_header(); ?>
 </section>
 
 <section class="py-[80px]">
-	<div class="max-w-[1200px] mx-auto px-4">
+	<div class="max-w-[1260px] mx-auto px-4">
 		<h2 class="text-center text-[36px] mb-8">Servicios</h2>
 		<div class="grid md:grid-cols-2 gap-4">
 			<div class="bg-white shadow-[2px_2px_30px_#00000020] h-fit">
@@ -81,6 +83,31 @@ get_header(); ?>
 		<a class="block mx-auto mt-12 w-fit bg-[#918473] text-white font-bold px-10 py-4 rounded-full" href="<?php echo $modalidad_fields['boton']['url']; ?>">
 			<?php echo $modalidad_fields['boton']['title']; ?>
 		</a>
+	</div>
+</section>
+
+<section>
+	<div class="grid grid-cols-2 bg-[#4F5D29]/40">
+		<img class="bg-gray-300" src="<?php echo $nosotros_fields['imagen_nosotros']['url']; ?>" alt="<?php echo $nosotros_fields['imagen_nosotros']['alt']; ?>">
+		<div class="px-[90px] py-[140px]">
+			<h2 class="mb-[20px] text-[28px] uppercase"><?php echo $nosotros_fields['titulo']; ?></h2>
+			<p class="text-[18px] font-light whitespace-pre-wrap"><?php echo strip_tags($nosotros_fields['descripcion']); ?></p>
+		</div>
+	</div>
+</section>
+
+<section class="py-[90px] bg-[#231F20]">
+	<div class="max-w-[1260px] mx-auto px-4">
+		<div class="grid grid-cols-9 gap-[60px]">
+			<div class="col-span-4">
+				<h3 class="text-white text-[40px] text-center leading-[110%]"><?php echo $banner2_fields['titulo'] ?></h3>
+				<img class="w-[500px] max-w-full mx-auto" src="<?php // echo $banner2_fields['bajada']['url'] ?>" alt="<?php // echo $banner2_fields['bajada']['alt'] ?>">
+				<a class="block mx-auto mt-12 w-fit border border-white text-white font-bold px-10 py-4 rounded-full" href="<?php echo $banner2_fields['boton']['url'] ?>"><?php echo $banner2_fields['boton']['title'] ?></a>
+			</div>
+			<div class="banner2-list col-span-5 flex items-center text-white text-[20px] font-semibold">
+				<?php echo $banner2_fields['lista'] ?>
+			</div>
+		</div>
 	</div>
 </section>
 
