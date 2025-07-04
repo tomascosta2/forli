@@ -119,13 +119,13 @@ get_header(); ?>
 			<div class="max-w-[540px]">
 				<img class="w-[500px] max-w-full mx-auto" src="<?php echo $clientes_fields['titulo']['url'] ?>" alt="<?php echo $clientes_fields['titulo']['alt'] ?>">
 				<div class="flex gap-8 flex-wrap justify-center">
-					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_1']['url']; ?>" alt="<?php echo $clientes_fields['cliente_1']['alt']; ?>">
-					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_2']['url']; ?>" alt="<?php echo $clientes_fields['cliente_2']['alt']; ?>">
-					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_3']['url']; ?>" alt="<?php echo $clientes_fields['cliente_3']['alt']; ?>">
-					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_4']['url']; ?>" alt="<?php echo $clientes_fields['cliente_4']['alt']; ?>">
-					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_5']['url']; ?>" alt="<?php echo $clientes_fields['cliente_5']['alt']; ?>">
-					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_6']['url']; ?>" alt="<?php echo $clientes_fields['cliente_6']['alt']; ?>">
-					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_7']['url']; ?>" alt="<?php echo $clientes_fields['cliente_7']['alt']; ?>">
+					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_1']['url']; ?>" alt="<?php echo $clientes_fields['cliente_1']['alt']; ?>">
+					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_2']['url']; ?>" alt="<?php echo $clientes_fields['cliente_2']['alt']; ?>">
+					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_3']['url']; ?>" alt="<?php echo $clientes_fields['cliente_3']['alt']; ?>">
+					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_4']['url']; ?>" alt="<?php echo $clientes_fields['cliente_4']['alt']; ?>">
+					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_5']['url']; ?>" alt="<?php echo $clientes_fields['cliente_5']['alt']; ?>">
+					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_6']['url']; ?>" alt="<?php echo $clientes_fields['cliente_6']['alt']; ?>">
+					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_7']['url']; ?>" alt="<?php echo $clientes_fields['cliente_7']['alt']; ?>">
 				</div>
 			</div>
 			<img src="<?php echo $clientes_fields['cliente_destacado']['url']; ?>" alt="<?php echo $clientes_fields['cliente_destacado']['alt']; ?>">
