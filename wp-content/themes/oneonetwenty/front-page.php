@@ -11,7 +11,7 @@ $contacto_fields = get_field('contacto');
 
 get_header(); ?>
 
-<section class="py-[80px] bg-gray-300 bg-[url(<?php echo $hero_fields['fondo']['url'] ?>)]">
+<section class="py-[80px] bg-gray-300 bg-[url(<?php echo $hero_fields['fondo']['url'] ?>)] bg-cover bg-center">
 	<div class="max-w-[1260px] mx-auto px-4">
 		<h1 class="text-white font-bold text-[48px] max-w-[660px] leading-[110%]"><?php echo $hero_fields['titulo']; ?></h1>
 		<p class="mt-8 font-light text-white"><?php echo $hero_fields['bajada']; ?></p>
