@@ -140,7 +140,7 @@ get_header(); ?>
 			<h2 class="text-[32px] my-4 leading-[120%]"><?php echo $contacto_fields['titulo'] ?></h2>
 			<p class="text-[20px] max-w-full w-[360px] font-medium leading-[120%]"><?php echo $contacto_fields['bajada'] ?></p>
 		</div>
-		<div class="bg-red-500 col-span-3 py-[80px] px-[100px] bg-[url('<?php echo $contacto_fields['imagen']['url']; ?>')]">
+		<div class="bg-red-500 col-span-3 py-[80px] px-[100px] bg-[url('<?php echo $contacto_fields['imagen']['url']; ?>')] bg-cover">
 			<?php echo do_shortcode('[contact-form-7 id="c0a4142" title="Formulario de contacto"]'); ?>
 		</div>
 	</div>
