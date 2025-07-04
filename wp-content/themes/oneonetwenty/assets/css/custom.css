@@ -176,9 +176,11 @@ h1.tcp-title {
 
 /* Contact */
 .formulario-contacto {
-	background-color: #FFFFFF90;
+	background-color: rgb(355, 355, 355, .9);
+	border-radius: 10px;
+	padding: 50px 40px;
 }
-.formulario-contacto input,
+.formulario-contacto input:not(.wpcf7-submit),
 .formulario-contacto textarea {
   width: 100%;
   border: none;
@@ -194,12 +196,12 @@ h1.tcp-title {
   resize: vertical;
 }
 
-.formulario-contacto input::placeholder,
+.formulario-contacto input:not(.wpcf7-submit)::placeholder,
 .formulario-contacto textarea::placeholder {
   color: #888;
 }
 
-.formulario-contacto input:focus,
+.formulario-contacto input:not(.wpcf7-submit):focus,
 .formulario-contacto textarea:focus {
   outline: none;
   border-bottom: 1px solid #999;
