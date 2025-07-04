@@ -175,6 +175,9 @@ h1.tcp-title {
 }
 
 /* Contact */
+.formulario-contacto {
+	background-color: #FFFFFF90;
+}
 .formulario-contacto input,
 .formulario-contacto textarea {
   width: 100%;
