@@ -174,6 +174,45 @@ h1.tcp-title {
 	margin: 20px 0;
 }
 
+/* Contact */
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  background: transparent;
+  color: #000;
+  font-family: inherit;
+}
+
+.formulario-contacto textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.formulario-contacto input::placeholder,
+.formulario-contacto textarea::placeholder {
+  color: #888;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #999;
+}
+
+.wpcf7-submit {
+  background-color: #9C8B77;
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 /* Footer */
 .tcp-footer {
 	background-color: #201C23;
@@ -188,6 +227,7 @@ h1.tcp-title {
 .tcp-footer * {
 	color: #FFF;
 }
+
 
 @media (max-width: 1200px) {
 	/* Header < 1200 */

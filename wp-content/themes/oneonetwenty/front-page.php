@@ -141,7 +141,7 @@ get_header(); ?>
 			<p class="text-[20px] max-w-full w-[360px] font-medium leading-[120%]"><?php echo $contacto_fields['bajada'] ?></p>
 		</div>
 		<div class="bg-red-500 col-span-3 bg-[url('<?php echo $contacto_fields['imagen']['url']; ?>')]">
-
+			<?php echo do_shortcode('[contact-form-7 id="c0a4142" title="Formulario de contacto"]'); ?>
 		</div>
 	</div>
 </section>
