@@ -33,7 +33,7 @@ get_header(); ?>
 						<?php echo strip_tags($servicios_fields['descripcion_servicio_1'], 'strong') ?>
 					</p>
 				</div>
-				<img class="h-[414px] bg-gray-300" src="<?php echo $servicios_fields['imagen_servicio_1']['url'] ?>" alt="">
+				<img class="h-[414px] bg-gray-300 w-full object-cover" src="<?php echo $servicios_fields['imagen_servicio_1']['url'] ?>" alt="">
 			</div>
 			<div class="bg-white shadow-[2px_2px_30px_#00000020]">
 				<div class="p-[50px]">
@@ -43,7 +43,7 @@ get_header(); ?>
 						<?php echo strip_tags($servicios_fields['descripcion_servicio_2'], 'strong') ?>
 					</p>
 				</div>
-				<img class="h-[414px] bg-gray-300" src="<?php echo $servicios_fields['imagen_servicio_2']['url'] ?>" alt="">
+				<img class="h-[414px] bg-gray-300 w-full object-cover" src="<?php echo $servicios_fields['imagen_servicio_2']['url'] ?>" alt="<?php echo $servicios_fields['imagen_servicio_2']['alt'] ?>">
 			</div>
 		</div>
 		<a class="block mx-auto mt-12 w-fit bg-[#918473] text-white font-bold px-10 py-4 rounded-full" href="<?php echo $servicios_fields['boton']['url']; ?>">
@@ -53,7 +53,7 @@ get_header(); ?>
 </section>
 
 <section>
-	<img class="h-[450px] bg-gray-400 object-cover object-center" src="<?php echo $banner_fields['imagen_banner']['url'] ?>" alt="<?php echo $banner_fields['imagen_banner']['alt'] ?>">
+	<img class="h-[450px] bg-gray-400 object-cover object-center" src="<?php echo $banner_fields['imagenbanner']['url'] ?>" alt="<?php echo $banner_fields['imagenbanner']['alt'] ?>">
 </section>
 
 <section class="py-[80px]">
@@ -89,9 +89,9 @@ get_header(); ?>
 </section>
 
 <section>
-	<div class="grid grid-cols-2 bg-[#4F5D29]/40">
-		<img class="bg-gray-300" src="<?php echo $nosotros_fields['imagen_nosotros']['url']; ?>" alt="<?php echo $nosotros_fields['imagen_nosotros']['alt']; ?>">
-		<div class="px-[90px] py-[140px]">
+	<div class="grid grid-cols-5 bg-[#4F5D29]/40">
+		<img class="bg-gray-300 col-span-2" src="<?php echo $nosotros_fields['imagen_nosotros']['url']; ?>" alt="<?php echo $nosotros_fields['imagen_nosotros']['alt']; ?>">
+		<div class="px-[90px] py-[140px] col-span-3">
 			<h2 class="mb-[20px] text-[28px] uppercase"><?php echo $nosotros_fields['titulo']; ?></h2>
 			<p class="text-[18px] font-light whitespace-pre-wrap"><?php echo strip_tags($nosotros_fields['descripcion']); ?></p>
 		</div>
@@ -117,7 +117,7 @@ get_header(); ?>
 	<div class="max-w-[1260px] mx-auto px-4">
 		<div class="grid grid-cols-2 gap-12">
 			<div class="max-w-[540px]">
-				<img class="w-[500px] max-w-full mx-auto" src="<?php echo $clientes_fields['titulo']['url'] ?>" alt="<?php echo $clientes_fields['titulo']['alt'] ?>">
+				<img class="w-[459px] max-w-full mx-auto" src="<?php echo $clientes_fields['titulo']['url'] ?>" alt="<?php echo $clientes_fields['titulo']['alt'] ?>">
 				<div class="flex gap-8 flex-wrap justify-center">
 					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_1']['url']; ?>" alt="<?php echo $clientes_fields['cliente_1']['alt']; ?>">
 					<img class="object-contain w-[90px] min-h-[20px]" src="<?php echo $clientes_fields['cliente_2']['url']; ?>" alt="<?php echo $clientes_fields['cliente_2']['alt']; ?>">
