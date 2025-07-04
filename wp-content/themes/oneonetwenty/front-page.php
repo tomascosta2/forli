@@ -53,7 +53,7 @@ get_header(); ?>
 </section>
 
 <section>
-	<img class="h-[450px] bg-gray-400 object-cover object-center" src="<?php echo $banner_fields['imagenbanner']['url'] ?>" alt="<?php echo $banner_fields['imagenbanner']['alt'] ?>">
+	<img class="h-[450px] w-full object-cover object-center" src="<?php echo $banner_fields['imagenbanner']['url'] ?>" alt="<?php echo $banner_fields['imagenbanner']['alt'] ?>">
 </section>
 
 <section class="py-[80px]">
@@ -69,7 +69,7 @@ get_header(); ?>
 						<?php echo strip_tags($modalidad_fields['descripcion_1'], 'strong') ?>
 					</p>
 				</div>
-				<img class="h-[414px] bg-gray-300" src="<?php echo $modalidad_fields['imagen_1']['url'] ?>" alt="">
+				<img class="h-[414px] bg-gray-300 w-full obejct-cover" src="<?php echo $modalidad_fields['imagen_1']['url'] ?>" alt="">
 			</div>
 			<div class="bg-white shadow-[2px_2px_30px_#00000020]">
 				<div class="p-[50px]">
@@ -79,7 +79,7 @@ get_header(); ?>
 						<?php echo strip_tags($modalidad_fields['descripcion_2'], 'strong') ?>
 					</p>
 				</div>
-				<img class="h-[414px] bg-gray-300" src="<?php echo $modalidad_fields['imagen_2']['url'] ?>" alt="">
+				<img class="h-[414px] bg-gray-300 w-full obejct-cover" src="<?php echo $modalidad_fields['imagen_2']['url'] ?>" alt="">
 			</div>
 		</div>
 		<a class="block mx-auto mt-12 w-fit bg-[#918473] text-white font-bold px-10 py-4 rounded-full" href="<?php echo $modalidad_fields['boton']['url']; ?>">
