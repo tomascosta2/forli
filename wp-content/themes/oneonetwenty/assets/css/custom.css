@@ -42,8 +42,8 @@ h1.tcp-title {
 
 /* Header */
 .tcp-header {
-	padding: 20px 0;
-	background-color: #201C23;
+	padding: 12px 0;
+	background-color: #000;
 }
 .tcp-header__wrapper {
 	display: flex;
@@ -52,7 +52,8 @@ h1.tcp-title {
 }
 .tcp-navigation__logo img,
 .tcp-header__logo img {
-	width: 120px;
+	width: 114px;
+	height: auto;
 }
 
 /* Header -> Navigation */
@@ -81,13 +82,10 @@ h1.tcp-title {
 	padding-left: 0 !important;
 }
 .tcp-navigation__list a {
-	font-size: 18px;
-	color: #161318;
+	font-size: 16px;
+	color: #F5F5F5;
 	text-decoration: none !important;
 	background-color: transparent !important;
-}
-.tcp-navigation__list a {
-	color: #F5F5F5;
 }
 .tcp-navigation__list a:hover {
 	color: var(--primary-color) !important;
@@ -212,6 +210,7 @@ h1.tcp-title {
   color: white;
   padding: 12px 52px;
   border: none;
+  display: block;
   margin: 0 auto;
   border-radius: 25px;
   font-size: 16px;
