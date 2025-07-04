@@ -138,7 +138,7 @@ get_header(); ?>
 		<div class="bg-white p-8 md:py-[150px] md:px-[80px] md:col-span-2">
 			<p class="uppercase text-[18px] font-bold text-[#4F5D29]"><?php echo $contacto_fields['arriba_del_titulo'] ?></p>
 			<h2 class="text-[24px] md:text-[32px] my-4 leading-[120%]"><?php echo $contacto_fields['titulo'] ?></h2>
-			<p class="text-[20px] max-w-full w-[360px] font-medium leading-[120%]"><?php echo $contacto_fields['bajada'] ?></p>
+			<p class="text-[20px] max-w-full md:w-[360px] font-medium leading-[120%]"><?php echo $contacto_fields['bajada'] ?></p>
 		</div>
 		<div class="bg-red-500 md:col-span-3 p-8 md:py-[80px] md:px-[100px] bg-[url('<?php echo $contacto_fields['imagen']['url']; ?>')] bg-cover">
 			<?php echo do_shortcode('[contact-form-7 id="c0a4142" title="Formulario de contacto"]'); ?>
