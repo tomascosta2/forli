@@ -59,7 +59,7 @@ get_header(); ?>
 <section class="py-[80px]">
 	<div class="max-w-[1045px] mx-auto px-4">
 		<h2 class="text-center text-[36px] mb-8"><?php echo $modalidad_fields['titulo'] ?></h2>
-		<img class="bg-gray-300 max-w-full mb-10 w-[300px] md:w-[540px] mx-auto h-auto" src="" alt="¿Cómo trabajamos?">
+		<img class="max-w-full mb-10 w-[300px] md:w-[540px] mx-auto h-auto" src="<?php echo $modalidad_fields['bajada']['url'] ?>" alt="<?php echo $modalidad_fields['bajada']['alt'] ?>">
 		<div class="grid md:grid-cols-2 gap-4 px-4">
 			<div class="bg-white shadow-[2px_2px_30px_#00000020]">
 				<div class="p-[50px]">
@@ -103,7 +103,7 @@ get_header(); ?>
 		<div class="grid grid-cols-9 gap-[60px]">
 			<div class="col-span-4">
 				<h3 class="text-white text-[40px] text-center leading-[110%]"><?php echo $banner2_fields['titulo'] ?></h3>
-				<img class="w-[500px] max-w-full mx-auto" src="<?php // echo $banner2_fields['bajada']['url'] ?>" alt="<?php // echo $banner2_fields['bajada']['alt'] ?>">
+				<img class="w-[500px] max-w-full mx-auto" src="<?php echo $banner2_fields['bajada']['url'] ?>" alt="<?php echo $banner2_fields['bajada']['alt'] ?>">
 				<a class="block mx-auto mt-12 w-fit border border-white text-white font-bold px-10 py-4 rounded-full" href="<?php echo $banner2_fields['boton']['url'] ?>"><?php echo $banner2_fields['boton']['title'] ?></a>
 			</div>
 			<div class="banner2-list col-span-5 flex items-center text-white text-[20px] font-semibold">
@@ -117,7 +117,7 @@ get_header(); ?>
 	<div class="max-w-[1260px] mx-auto px-4">
 		<div class="grid grid-cols-2 gap-12">
 			<div class="max-w-[540px]">
-				<img class="w-[500px] max-w-full mx-auto" src="<?php // echo $clientes_fields['bajada']['url'] ?>" alt="<?php // echo $clientes_fields['bajada']['alt'] ?>">
+				<img class="w-[500px] max-w-full mx-auto" src="<?php echo $clientes_fields['titulo']['url'] ?>" alt="<?php echo $clientes_fields['titulo']['alt'] ?>">
 				<div class="flex gap-8 flex-wrap justify-center">
 					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_1']['url']; ?>" alt="<?php echo $clientes_fields['cliente_1']['alt']; ?>">
 					<img class="w-[90px] min-h-[20px] bg-gray-400" src="<?php echo $clientes_fields['cliente_2']['url']; ?>" alt="<?php echo $clientes_fields['cliente_2']['alt']; ?>">
@@ -140,7 +140,7 @@ get_header(); ?>
 			<h2 class="text-[32px] my-4 leading-[120%]"><?php echo $contacto_fields['titulo'] ?></h2>
 			<p class="text-[20px] max-w-full w-[360px] font-medium leading-[120%]"><?php echo $contacto_fields['bajada'] ?></p>
 		</div>
-		<div class="bg-red-500 col-span-3 bg-[url('<?php echo $contacto_fields['imagen_de_fondo']['url']; ?>')]">
+		<div class="bg-red-500 col-span-3 bg-[url('<?php echo $contacto_fields['imagen']['url']; ?>')]">
 
 		</div>
 	</div>
