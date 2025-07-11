@@ -100,7 +100,7 @@ get_header(); ?>
 
 <section class="py-[90px] bg-[#231F20]">
 	<div class="max-w-[1260px] mx-auto px-4">
-		<div class="grid md:grid-cols-9 gap-[60px]">
+		<div class="grid grid-cols-1 md:grid-cols-9 gap-[60px]">
 			<div class="md:col-span-4">
 				<h3 class="text-white text-[40px] text-center leading-[110%]"><?php echo $banner2_fields['titulo'] ?></h3>
 				<img class="w-[500px] max-w-full mx-auto" src="<?php echo $banner2_fields['bajada']['url'] ?>" alt="<?php echo $banner2_fields['bajada']['alt'] ?>">
@@ -115,7 +115,7 @@ get_header(); ?>
 
 <section class="py-[100px]">
 	<div class="max-w-[1260px] mx-auto px-4">
-		<div class="grid md:grid-cols-2 md:gap-12">
+		<div class="grid grid-cols-1 md:grid-cols-2 md:gap-12">
 			<div class="max-w-[540px]">
 				<img class="w-[459px] max-w-full mx-auto" src="<?php echo $clientes_fields['titulo']['url'] ?>" alt="<?php echo $clientes_fields['titulo']['alt'] ?>">
 				<div class="flex gap-8 flex-wrap justify-center">
