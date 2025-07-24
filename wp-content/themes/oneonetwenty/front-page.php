@@ -133,7 +133,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section>
+<section id="contact">
 	<div class="grid md:grid-cols-5">
 		<div class="bg-white p-8 md:py-[150px] md:px-[80px] md:col-span-2">
 			<p class="uppercase text-[18px] font-bold text-[#4F5D29]"><?php echo $contacto_fields['arriba_del_titulo'] ?></p>
