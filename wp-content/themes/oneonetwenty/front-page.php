@@ -21,7 +21,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section class="py-[80px]">
+<section class="py-[80px]" id="servicios">
 	<div class="max-w-[1260px] mx-auto px-4">
 		<h2 class="text-center text-[36px] mb-8">Servicios</h2>
 		<div class="grid md:grid-cols-2 gap-4">
@@ -88,7 +88,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section>
+<section id="nosotros">
 	<div class="grid md:grid-cols-5 bg-[#4F5D29]/40">
 		<img class="bg-gray-300 md:col-span-2" src="<?php echo $nosotros_fields['imagen_nosotros']['url']; ?>" alt="<?php echo $nosotros_fields['imagen_nosotros']['alt']; ?>">
 		<div class="md:px-[90px] p-8 md:py-[140px] md:col-span-3">
@@ -113,7 +113,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section class="py-[100px]">
+<section class="py-[100px]" id="clientes">
 	<div class="max-w-[1260px] mx-auto px-4">
 		<div class="grid grid-cols-1 md:grid-cols-2 md:gap-12">
 			<div class="max-w-[540px]">
@@ -133,7 +133,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section id="contact">
+<section id="contacto">
 	<div class="grid md:grid-cols-5">
 		<div class="bg-white p-8 md:py-[150px] md:px-[80px] md:col-span-2">
 			<p class="uppercase text-[18px] font-bold text-[#4F5D29]"><?php echo $contacto_fields['arriba_del_titulo'] ?></p>
