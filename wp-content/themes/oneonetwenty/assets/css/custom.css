@@ -15,6 +15,10 @@
   --primary-color: #918473;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f5f5f5;
 }

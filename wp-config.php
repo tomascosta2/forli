@@ -26,7 +26,7 @@ define( 'DB_NAME', 'u605342069_forli_db' );
 define( 'DB_USER', 'u605342069_forli_u' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'FOpass!@25' );
+define( 'DB_PASSWORD', 'TOMIc0149@' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
